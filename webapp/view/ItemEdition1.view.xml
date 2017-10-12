@@ -1,0 +1,374 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="com.sap.build.standard.fmgConMonEventList.controller.ItemEdition1" xmlns:m="sap.m"
+	xmlns:layout="sap.ui.layout" xmlns:form="sap.ui.layout.form" xmlns:core="sap.ui.core" xmlns:layout1="sap.ui.commons.layout">
+	<m:Page showHeader="true" title="Edit Event" showFooter="true" showNavButton="false" enableScrolling="false">
+		<m:content>
+			<layout1:AbsoluteLayout horizontalScrolling="Hidden" verticalScrolling="Auto">
+				<layout1:positions>
+					<layout1:PositionContainer left="2px" top="8px">
+						<layout1:control>
+							<layout:BlockLayout>
+								<layout:content>
+									<layout:BlockLayoutRow scrollable="false">
+										<layout:content>
+											<layout:BlockLayoutCell title="Event Detail" titleAlignment="Begin" titleLevel="Auto" width="0">
+												<layout:content>
+													<layout:BlockLayout>
+														<layout:content>
+															<layout:BlockLayoutRow scrollable="false">
+																<layout:content>
+																	<layout:BlockLayoutCell title="" titleAlignment="Begin" titleLevel="Auto" width="3">
+																		<layout:content>
+																			<form:Form width="200px" editable="true" visible="true">
+																				<form:title/>
+																				<form:formContainers>
+																					<form:FormContainer visible="true">
+																						<form:formElements>
+																							<form:FormElement visible="true">
+																								<form:label>
+																									<m:Label text="Asset ID" design="Bold" width="100%" required="false" textAlign="Begin" textDirection="Inherit"/>
+																								</form:label>
+																								<form:fields>
+																									<m:ComboBox value="{EquipID}" placeholder="Select Asset ID" editable="false" enabled="true" visible="true" width="auto" valueState="None"
+																										maxWidth="100%" items="{/EquipIDSet}">
+																										<m:items>
+																											<core:Item text="{Description}" enabled="true"/>
+																										</m:items>
+																									</m:ComboBox>
+																								</form:fields>
+																							</form:FormElement>
+																							<form:FormElement visible="true">
+																								<form:label>
+																									<m:Label text="Component ID" design="Bold" width="100%" required="false" textAlign="Begin" textDirection="Inherit"/>
+																								</form:label>
+																								<form:fields>
+																									<m:ComboBox value="{ComponentName}" placeholder="Select Component ID" editable="false" enabled="true" visible="true" width="auto"
+																										valueState="None" maxWidth="100%" items="{/ComponentIDSet}">
+																										<m:items>
+																											<core:Item text="{Description}" enabled="true"/>
+																										</m:items>
+																									</m:ComboBox>
+																								</form:fields>
+																							</form:FormElement>
+																							<form:FormElement visible="true">
+																								<form:label>
+																									<m:Label text="Component Type" design="Bold" width="100%" required="false" textAlign="Begin" textDirection="Inherit"/>
+																								</form:label>
+																								<form:fields>
+																									<m:Text text="{ComponentType}" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+																								</form:fields>
+																							</form:FormElement>
+																							<form:FormElement visible="true">
+																								<form:label>
+																									<m:Label text="Updated By" design="Bold" width="100%" required="false" textAlign="Begin" textDirection="Inherit"/>
+																								</form:label>
+																								<form:fields>
+																									<m:Text text="Damien Chen" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+																								</form:fields>
+																							</form:FormElement>
+																						</form:formElements>
+																						<form:title/>
+																					</form:FormContainer>
+																				</form:formContainers>
+																				<form:layout>
+																					<form:ResponsiveGridLayout adjustLabelSpan="false" columnsL="2" labelSpanL="3" columnsM="1" labelSpanM="2" labelSpanS="12"/>
+																				</form:layout>
+																			</form:Form>
+																		</layout:content>
+																	</layout:BlockLayoutCell>
+																	<layout:BlockLayoutCell title="" titleAlignment="Begin" titleLevel="Auto">
+																		<layout:content>
+																			<form:Form width="200px" editable="true" visible="true">
+																				<form:title/>
+																				<form:formContainers>
+																					<form:FormContainer visible="true">
+																						<form:formElements>
+																							<form:FormElement visible="true">
+																								<form:label>
+																									<m:Label text="Area" design="Bold" width="100%" required="false" textAlign="Begin" textDirection="Inherit"/>
+																								</form:label>
+																								<form:fields>
+																									<m:ComboBox value="{Area}" editable="false" enabled="true" visible="true" width="auto" valueState="None" maxWidth="100%" items="{/AreaSet}">
+																										<m:items>
+																											<core:Item text="{Description}" enabled="true"/>
+																										</m:items>
+																									</m:ComboBox>
+																								</form:fields>
+																							</form:FormElement>
+																							<form:FormElement visible="true">
+																								<form:label>
+																									<m:Label text="Asset Type" design="Bold" width="100%" required="false" textAlign="Begin" textDirection="Inherit"/>
+																								</form:label>
+																								<form:fields>
+																									<m:Text text="{AssetType}" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+																								</form:fields>
+																							</form:FormElement>
+																							<form:FormElement visible="true">
+																								<form:label>
+																									<m:Label text="Con Mon Type" design="Bold" width="100%" required="false" textAlign="Begin" textDirection="Inherit"/>
+																								</form:label>
+																								<form:fields>
+																									<m:ComboBox value="{ConMonType}" editable="false" enabled="true" visible="true" width="auto" valueState="None" maxWidth="100%"
+																										items="{/ComponentTypeSet}">
+																										<m:items>
+																											<core:Item text="{Description}" enabled="true"/>
+																										</m:items>
+																									</m:ComboBox>
+																								</form:fields>
+																							</form:FormElement>
+																							<form:FormElement visible="true">
+																								<form:label>
+																									<m:Label text="Updated" design="Bold" width="100%" required="false" textAlign="Begin" textDirection="Inherit"/>
+																								</form:label>
+																								<form:fields>
+																									<m:DatePicker value="11/10/17" enabled="false" visible="true" width="auto" displayFormat="MMM dd, yyyy"/>
+																								</form:fields>
+																							</form:FormElement>
+																						</form:formElements>
+																						<form:title/>
+																					</form:FormContainer>
+																				</form:formContainers>
+																				<form:layout>
+																					<form:ResponsiveGridLayout adjustLabelSpan="false" columnsL="2" labelSpanL="3" columnsM="1" labelSpanM="2" labelSpanS="12"/>
+																				</form:layout>
+																			</form:Form>
+																		</layout:content>
+																	</layout:BlockLayoutCell>
+																	<layout:BlockLayoutCell title="" titleAlignment="Begin" titleLevel="Auto" width="0">
+																		<layout:content>
+																			<form:Form width="263px" editable="true" visible="true">
+																				<form:title/>
+																				<form:formContainers>
+																					<form:FormContainer visible="true">
+																						<form:formElements>
+																							<form:FormElement visible="true">
+																								<form:label>
+																									<m:Label text="Source" design="Bold" width="100%" required="false" textAlign="Begin" textDirection="Inherit"/>
+																								</form:label>
+																								<form:fields>
+																									<m:ComboBox value="{SourceSystem}" placeholder="Select Source System" editable="false" enabled="true" visible="true" width="auto"
+																										valueState="None" maxWidth="100%" items="{/SourceSystemSet}">
+																										<m:items>
+																											<core:Item text="{Description}" enabled="true"/>
+																										</m:items>
+																									</m:ComboBox>
+																								</form:fields>
+																							</form:FormElement>
+																							<form:FormElement visible="true">
+																								<form:label>
+																									<m:Label text="Survey Date" design="Bold" width="100%" required="false" textAlign="Begin" textDirection="Inherit"/>
+																								</form:label>
+																								<form:fields>
+																									<m:DatePicker placeholder="Select Survey Date"
+																										value="{path: 'SurveyDate', type: 'sap.ui.model.type.Date', formatOptions: { UTC: true, style: 'short' }}" enabled="false" visible="true"
+																										width="auto" displayFormat="MMM dd, yyyy"/>
+																								</form:fields>
+																							</form:FormElement>
+																							<form:FormElement visible="true">
+																								<form:label>
+																									<m:Label text="Source System Suggested Severit" design="Bold" width="100%" required="false" textAlign="Begin" textDirection="Inherit"/>
+																								</form:label>
+																								<form:fields>
+																									<m:ComboBox value="{Severity}" placeholder="Select Severity" editable="false" enabled="true" visible="true" width="auto" valueState="None"
+																										maxWidth="100%" items="{/SeveritySet}">
+																										<m:items>
+																											<core:Item text="{Description}" enabled="true"/>
+																										</m:items>
+																									</m:ComboBox>
+																								</form:fields>
+																							</form:FormElement>
+																							<form:FormElement visible="true">
+																								<form:label>
+																									<m:Label text="Functional Location (SAP)" design="Bold" width="100%" required="false" textAlign="Begin" textDirection="Inherit"/>
+																								</form:label>
+																								<form:fields>
+																									<m:Text text="{FunctionalLocation}" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+																								</form:fields>
+																							</form:FormElement>
+																						</form:formElements>
+																						<form:title/>
+																					</form:FormContainer>
+																				</form:formContainers>
+																				<form:layout>
+																					<form:ResponsiveGridLayout adjustLabelSpan="false" columnsL="2" labelSpanL="3" columnsM="1" labelSpanM="2" labelSpanS="12"/>
+																				</form:layout>
+																			</form:Form>
+																		</layout:content>
+																	</layout:BlockLayoutCell>
+																</layout:content>
+															</layout:BlockLayoutRow>
+															<layout:BlockLayoutRow scrollable="false">
+																<layout:content>
+																	<layout:BlockLayoutCell title="" titleAlignment="Begin" titleLevel="Auto" width="0">
+																		<layout:content>
+																			<m:Toolbar width="auto" height="44px" design="Transparent" visible="true" enabled="true">
+																				<m:content>
+																					<m:ToolbarSpacer/>
+																					<m:Button text="Set As Baseline" type="Emphasized" icon="sap-icon://pushpin-off" iconFirst="true" width="auto" enabled="true" visible="true"
+																						iconDensityAware="false"/>
+																					<m:ToolbarSpacer/>
+																					<m:Button text="Carry Forward Last Assessment and Comments" type="Emphasized" icon="sap-icon://close-command-field" iconFirst="true"
+																						width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+																				</m:content>
+																				<m:tooltip/>
+																			</m:Toolbar>
+																			<m:Toolbar width="auto" height="45px" design="Transparent" visible="true" enabled="true">
+																				<m:content>
+																					<m:ComboBox value="{Status}" placeholder="Select Status" editable="true" enabled="true" visible="true" width="150px" valueState="None"
+																						maxWidth="100%" items="{/StatusSet}">
+																						<m:items>
+																							<core:Item text="{Description}" enabled="true"/>
+																						</m:items>
+																					</m:ComboBox>
+																					<m:ComboBox value="{Severity}" placeholder="Select Severity" editable="true" enabled="true" visible="true" width="auto" valueState="None"
+																						maxWidth="100%" items="{/SeveritySet}">
+																						<m:items>
+																							<core:Item text="{Description}" enabled="true"/>
+																						</m:items>
+																					</m:ComboBox>
+																				</m:content>
+																				<m:tooltip/>
+																			</m:Toolbar>
+																			<m:Toolbar width="auto" height="45px" design="Transparent" visible="true" enabled="true">
+																				<m:content>
+																					<m:ComboBox placeholder="Select Fault Type" editable="true" enabled="true" visible="true" width="400px" valueState="None" maxWidth="100%">
+																						<m:items>
+																							<core:Item text="Item" enabled="true"/>
+																							<core:Item text="Item" enabled="true"/>
+																							<core:Item text="Item" enabled="true"/>
+																						</m:items>
+																					</m:ComboBox>
+																					<m:ComboBox placeholder="Select Fault Location" editable="true" enabled="true" visible="true" width="auto" valueState="None" maxWidth="100%">
+																						<m:items>
+																							<core:Item text="Item" enabled="true"/>
+																							<core:Item text="Item" enabled="true"/>
+																							<core:Item text="Item" enabled="true"/>
+																						</m:items>
+																					</m:ComboBox>
+																				</m:content>
+																				<m:tooltip/>
+																			</m:Toolbar>
+																		</layout:content>
+																	</layout:BlockLayoutCell>
+																</layout:content>
+															</layout:BlockLayoutRow>
+															<layout:BlockLayoutRow scrollable="false">
+																<layout:content>
+																	<layout:BlockLayoutCell title="Recommended Actions" titleAlignment="Begin" titleLevel="Auto" width="0">
+																		<layout:content>
+																			<m:ComboBox value="Action 1" placeholder="Choose a Recommended Action" editable="true" enabled="true" visible="true" width="400px"
+																				valueState="None" maxWidth="100%" items="{/RecommendedActionsSet}">
+																				<m:items>
+																					<core:Item text="{Description}" enabled="true"/>
+																				</m:items>
+																			</m:ComboBox>
+																			<m:ComboBox value="" placeholder="Choose a Recommended Action" editable="true" enabled="true" visible="true" width="400px" valueState="None"
+																				maxWidth="100%" items="{/RecommendedActionsSet}">
+																				<m:items>
+																					<core:Item text="{Description}" enabled="true"/>
+																				</m:items>
+																			</m:ComboBox>
+																			<m:ComboBox value="" placeholder="Choose a Recommended Action" editable="true" enabled="true" visible="true" width="400px" valueState="None"
+																				maxWidth="100%" items="{/RecommendedActionsSet}">
+																				<m:items>
+																					<core:Item text="{Description}" enabled="true"/>
+																				</m:items>
+																			</m:ComboBox>
+																			<m:ComboBox value="" placeholder="Choose a Recommended Action" editable="true" enabled="true" visible="true" width="400px" valueState="None"
+																				maxWidth="100%" items="{/RecommendedActionsSet}">
+																				<m:items>
+																					<core:Item text="{Description}" enabled="true"/>
+																				</m:items>
+																			</m:ComboBox>
+																		</layout:content>
+																	</layout:BlockLayoutCell>
+																	<layout:BlockLayoutCell title="Notification" titleAlignment="Begin" titleLevel="Auto" width="3">
+																		<layout:content>
+																			<m:Input value="10004567" placeholder="Select Notification" type="Text" description="" showValueHelp="true" enabled="true" visible="true"
+																				width="auto" valueHelpOnly="false" maxLength="0" valueHelpRequest="_onInputValueHelpRequest4"/>
+																			<m:Input placeholder="Select Notification" type="Text" showValueHelp="true" enabled="true" visible="true" width="auto" valueHelpOnly="false"
+																				maxLength="0" valueHelpRequest="_onInputValueHelpRequest5"/>
+																			<m:Input placeholder="Select Notification" type="Text" showValueHelp="true" enabled="true" visible="true" width="auto" valueHelpOnly="false"
+																				maxLength="0" valueHelpRequest="_onInputValueHelpRequest6"/>
+																			<m:Input placeholder="Select Notification" type="Text" showValueHelp="true" enabled="true" visible="true" width="auto" valueHelpOnly="false"
+																				maxLength="0" valueHelpRequest="_onInputValueHelpRequest7"/>
+																		</layout:content>
+																	</layout:BlockLayoutCell>
+																</layout:content>
+															</layout:BlockLayoutRow>
+															<layout:BlockLayoutRow scrollable="false">
+																<layout:content>
+																	<layout:BlockLayoutCell title="Comments" titleAlignment="Begin" titleLevel="Auto" width="0">
+																		<layout:content>
+																			<m:TextArea rows="6" cols="150" maxLength="0" wrapping="Soft" visible="true"/>
+																		</layout:content>
+																	</layout:BlockLayoutCell>
+																</layout:content>
+															</layout:BlockLayoutRow>
+															<layout:BlockLayoutRow scrollable="false">
+																<layout:content>
+																	<layout:BlockLayoutCell title="Add Image/File" titleAlignment="Begin" titleLevel="Auto" width="0">
+																		<layout:content>
+																			<m:UploadCollection uploadEnabled="false" numberOfAttachmentsText="" showSeparators="All"
+																				noDataText="The UploadCollection coming from BUILD cannot work in WebIDE without additional work" maximumFileSize="10"
+																				mimeType="image/jpeg,image/gif,image/png,text/plain,application/pdf,application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/vnd.openxmlformats-officedocument.presentationml.presentation,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+																				multiple="false" uploadUrl="" sameFilenameAllowed="false" mode="SingleSelectMaster" uploadComplete="_onUploadCollectionUploadComplete1"
+																				change="_onUploadCollectionChange1" typeMissmatch="_onUploadCollectionTypeMissmatch1" fileSizeExceed="_onUploadCollectionFileSizeExceed1">
+																				<m:headerParameters/>
+																				<m:items/>
+																				<m:parameters/>
+																				<m:toolbar/>
+																			</m:UploadCollection>
+																		</layout:content>
+																	</layout:BlockLayoutCell>
+																</layout:content>
+															</layout:BlockLayoutRow>
+														</layout:content>
+													</layout:BlockLayout>
+												</layout:content>
+											</layout:BlockLayoutCell>
+											<layout:BlockLayoutCell title="Event History Since Baseline" titleAlignment="Begin" titleLevel="Auto" width="0">
+												<layout:content>
+													<m:List width="500px" growing="true" growingThreshold="20" growingScrollToLoad="true" backgroundDesign="Solid">
+														<m:items>
+															<m:FeedListItem icon="" sender="George"
+																text="qwqwqwqwqwqwqwqwqqwqwqqwqwqwqwqwqwqqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqqqwwqwqqwqwqqwwqqwqwqwqwqwqwqwqqwqwqqwqwqwqwqwqqw"
+																info="Severity: Abnormal" timestamp="Survey Date: 14/9/16"/>
+															<m:FeedListItem icon="" sender="Ron"
+																text="qwqwqwqwqwqwqwqwqqwqwqqwqwqwqwqwqwqqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqqqwwqwqqwqwqqwwqqwqwqwqwqwqwqwqqwqwqqwqwqwqwqwqqw"
+																info="Severity: Low" timestamp="Survey Date: 16/8/14"/>
+															<m:FeedListItem icon="" sender="Fred"
+																text="qwqwqwqwqwqwqwqwqqwqwqqwqwqwqwqwqwqqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqqqwwqwqqwqwqqwwqqwqwqwqwqwqwqwqqwqwqqwqwqwqwqwqqw"
+																info="Severity: Severe" timestamp="Survey Date: 14/10/16"/>
+															<m:FeedListItem icon="" sender="Fred (Baseline)"
+																text="qwqwqwqwqwqwqwqwqqwqwqqwqwqwqwqwqwqqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqqqwwqwqqwqwqqwwqqwqwqwqwqwqwqwqqwqwqqwqwqwqwqwqqw"
+																info="Severity: Normal" timestamp="Survey Date: 16/4/14"/>
+														</m:items>
+													</m:List>
+												</layout:content>
+											</layout:BlockLayoutCell>
+										</layout:content>
+									</layout:BlockLayoutRow>
+								</layout:content>
+							</layout:BlockLayout>
+						</layout1:control>
+					</layout1:PositionContainer>
+				</layout1:positions>
+			</layout1:AbsoluteLayout>
+		</m:content>
+		<m:footer>
+			<m:Bar design="Auto">
+				<m:contentLeft/>
+				<m:contentMiddle/>
+				<m:contentRight>
+					<m:Button text="Save" type="Emphasized" icon="sap-icon://save" iconFirst="true" width="auto" enabled="true" visible="true"
+						iconDensityAware="false" press="_onButtonPress14"/>
+					<m:Button text="Cancel" type="Default" icon="sap-icon://sys-cancel-2" iconFirst="true" width="auto" enabled="true" visible="true"
+						iconDensityAware="false" press="_onButtonPress15"/>
+				</m:contentRight>
+			</m:Bar>
+		</m:footer>
+		<m:headerContent/>
+		<m:subHeader/>
+		<m:customHeader/>
+	</m:Page>
+</mvc:View>

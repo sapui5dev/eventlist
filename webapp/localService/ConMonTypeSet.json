@@ -1,0 +1,13 @@
+[{
+	"Description": "Vibration Axial",
+	"ID": "C1"
+}, {
+	"Description": "Vibration Vertical",
+	"ID": "C2"
+}, {
+	"Description": "Vibration Horizontal",
+	"ID": "C3"
+}, {
+	"Description": "Thermography",
+	"ID": "C4"
+}]

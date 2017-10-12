@@ -1,0 +1,19 @@
+[{
+	"Description": "Normal",
+	"ID": "S1"
+}, {
+	"Description": "Abnormal",
+	"ID": "S2"
+}, {
+	"Description": "Good",
+	"ID": "S3"
+}, {
+	"Description": "Caution",
+	"ID": "S4"
+}, {
+	"Description": "Severe",
+	"ID": "S5"
+}, {
+	"Description": "Low",
+	"ID": "S6"
+}]

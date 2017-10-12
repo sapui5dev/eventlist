@@ -1,0 +1,41 @@
+[{
+	"___FK_46d9828fe49299e50d9bb2ee": "SI1",
+	"filename": "Extinguisher1.png",
+	"Image": "/webapp/localService/assets/Extinguisher1.png",
+	"ID": "A1"
+}, {
+	"___FK_46d9828fe49299e50d9bb2ee": "SI1",
+	"filename": "Extinguisher2.png",
+	"Image": "/webapp/localService/assets/Extinguisher2.png",
+	"ID": "A2"
+}, {
+	"___FK_46d9828fe49299e50d9bb2ee": "SI2",
+	"filename": "Door.png",
+	"Image": "/webapp/localService/assets/Door.png",
+	"ID": "A3"
+}, {
+	"___FK_46d9828fe49299e50d9bb2ee": "SI3",
+	"filename": "Pallets.png",
+	"Image": "/webapp/localService/assets/Pallets.png",
+	"ID": "A4"
+}, {
+	"___FK_46d9828fe49299e50d9bb2ee": "SI4",
+	"filename": "Compressor.jpg",
+	"Image": "/webapp/localService/assets/Compressor.jpg",
+	"ID": "A5"
+}, {
+	"___FK_46d9828fe49299e50d9bb2ee": "SI5",
+	"filename": "Garage.jpg",
+	"Image": "/webapp/localService/assets/Garage.jpg",
+	"ID": "A6"
+}, {
+	"___FK_46d9828fe49299e50d9bb2ee": "SI6",
+	"filename": "Robot.jpg",
+	"Image": "/webapp/localService/assets/Robot.jpg",
+	"ID": "A7"
+}, {
+	"___FK_46d9828fe49299e50d9bb2ee": "SI7",
+	"filename": "Valve.png",
+	"Image": "/webapp/localService/assets/Valve.png",
+	"ID": "A8"
+}]
